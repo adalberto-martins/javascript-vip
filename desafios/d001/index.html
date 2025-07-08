@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mensagens</title>
-    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="style.css">        
 </head>
 <body>
     <header>
@@ -12,12 +12,15 @@
     </header>
     <main>        
         <section>
-            <article id="botao01" onclick="clicar1()">Botão 01</article>
-            <article id="botao02" onclick="clicar2()">Botão 02</article>
-            <article id="botao" onclick="clicar3()">Botão 03</article>
+            <article id="botao01">Botão 01</article>
+            <article id="botao02">Botão 02</article>
+            <article id="botao03">Botão 03</article>
         </section>
     </main>
     <script>
+        botao01.addEventListener('click',clicar1)
+        botao02.addEventListener('click',clicar2)
+        botao03.addEventListener('click',clicar3)
         function clicar1() {
             window.alert('Você clicou no 1º botão!')          
         }
@@ -26,8 +29,7 @@
         }
         function clicar3() {
             window.alert('Você clicou no 3º botão!')
-        }      
-
+        }
     </script>
 </body>
 </html>
