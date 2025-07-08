@@ -1,0 +1,39 @@
+@charset 'utf-8';
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+main {
+    background-color: antiquewhite;
+    height: 100vh;    
+}
+
+header h1 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+}
+
+section {
+    display: flex;
+}
+
+article {
+    background-color: gray;
+    color: white;
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 5px;
+    border: 1px solid black;
+    vertical-align: text-bottom;
+    text-align: center;
+    
+}
+
