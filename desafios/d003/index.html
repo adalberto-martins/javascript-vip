@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antes e Depois</title>
+    <style>
+        body {
+            font: bolder 20pt Arial;
+        }
+
+        input {
+            width: 180px;
+            height: 50px            
+        }
+
+        input:hover {
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Antes e depois</h1>
+    </header>
+    <section>
+        <input type="button" value="Antecessor e Sucessor" onclick="verificar()">
+    </section>
+</body>
+<script>
+    function verificar() {
+        var n1 = Number(prompt('Digite um número inteiro qualquer'))
+        var ant = n1 - 1
+        var pos = n1 + 1
+        alert(`Antes de ${n1}, temos o número ${ant}.\nDepois de ${n1}, temos o número ${pos}.`)
+    }
+</script>
+</html>
