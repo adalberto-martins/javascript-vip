@@ -20,6 +20,13 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.362);
 }
 
+input[type="button"] {
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    
+}
+
 footer {
     color: white;
     text-align: center;
