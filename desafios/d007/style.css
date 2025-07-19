@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+body {
+    font: normal 22pt Arial;
+}
+
+header {
+    text-align: center;
+}
+
+section input {
+    display: block;
+    margin: auto;
+    font-size: 1em;
+    width: 180px ;
+    height: 80px;
+}
+
+section input:hover {
+    border: 3px solid yellow;
+    background: black;
+    color: yellow;
+}
+
+section#res {
+    font-weight: bold;
+    padding-top: 10px;
+    text-align: center;
+    color: #333;
+}
