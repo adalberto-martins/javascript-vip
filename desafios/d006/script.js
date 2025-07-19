@@ -1,29 +1,20 @@
 function converter() {
-    let dist = prompt('Digite uma distância em metros (m)')
+    let temp = parseFloat(prompt(`Digite a temperatura em °C (Celsius): `))
     let res = document.querySelector('section#res')
 
-    if (!dist || Number(dist) <= 0) {
-        alert(`Por favor, digite uma distância válida em metros!`)
-        res.innerHTML = ''
-        return
-    }
+    if (isNaN(temp)) {
+    alert(`Por favor, digite uma temperatura válida em Celsius!`);
+    res.innerHTML = '';
+    return;
+    }   
     
-    let km = dist / 1000
-    let hm = dist / 100
-    let dam = dist / 10
-    let dm = dist * 10
-    let cm = dist * 100
-    let mm = dist * 1000
-    if(dist == 0) { 
-        alert(`Por favor Digite uma Distancia em metros!`)
-        res.innerHTML = ''
-    }
+    let k = temp + 273.15
+    let f = (temp * 9/5) + 32
+    
+   
 
-    res.innerHTML = `<p><strong>A Distancia de ${dist} metros, corresponde a...</strong></p>`
-    res.innerHTML += `<p>${km} quilômetros (Km)</p>`
-    res.innerHTML += `<p>${hm} hectômetros (Hm)</p>`
-    res.innerHTML += `<p>${dam} decâmetros (Dam)</p>`
-    res.innerHTML += `<p>${dm} decimetros (dm)</p>`
-    res.innerHTML += `<p>${cm} centímetros (cm)</p>`
-    res.innerHTML += `<p>${mm} milímetros (mm)</p>`
+    res.innerHTML = `<p><strong>A Temperatura de ${temp.toFixed(1).replace('.', ',')}°C, corresponde a...</strong></p>`
+    res.innerHTML += `<p>${k.toFixed(1).replace('.', ',')} K (Kelvin)</p>`
+    res.innerHTML += `<p>${f.toFixed(1).replace('.', ',')}°F (Fahrenheit)</p>`
+    
 }
