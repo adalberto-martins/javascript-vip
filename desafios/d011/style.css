@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+body {
+    font: normal 20pt Arial;
+    background: whitesmoke;
+}
+header {
+    text-align: center;
+}
+main {
+    display: block;
+    margin: auto;
+    padding: 8px;
+    width: 98%;
+    background: white;
+}
+section > input {
+    display: block;
+    margin: auto;
+    width: 180px;
+    height: 50px;
+}
+section > input:hover {
+    background: gray;
+    color: white;
+    border: white;
+    text-decoration: underline;
+}
+section#res {
+    margin-top: 10px;
+}
+.bi{
+    background: rgb(119, 220, 119);
+}
+.nbi {
+    background: rgb(242, 80, 80);
+}
