@@ -30,13 +30,13 @@ function verificar() {
 
     if (pre > preatu) {
         res.innerHTML += `<p>Hoje ${prod} está mais barato.</p>`;
-        res.innerHTML += `<p>O preço caiu R$ ${dif.toFixed(2)} em relação ao preço anterior.</p>`;
-        res.innerHTML += `Uma variação de ${vari.toFixed(1)}% para baixo.`;
+        res.innerHTML += `<p>O preço caiu R$ ${dif.toFixed(2).replace('.', ',')} em relação ao preço anterior.</p>`;
+        res.innerHTML += `Uma variação de ${vari.toFixed(1).replace('.', ',')}% para baixo.`;
     } else {
         let aum = preatu - pre;
         let variaum = (aum * 100) / pre;
         res.innerHTML += `<p>Hoje ${prod} está mais caro.</p>`;
-        res.innerHTML += `<p>O preço subiu R$ ${aum.toFixed(2)} em relação ao preço anterior.</p>`;
-        res.innerHTML += `Uma variação de ${variaum.toFixed(1)}% para cima.`;
+        res.innerHTML += `<p>O preço subiu R$ ${aum.toFixed(2).replace('.', ',')} em relação ao preço anterior.</p>`;
+        res.innerHTML += `Uma variação de ${variaum.toFixed(1).replace('.', ',')}% para cima.`;
     }
 }
