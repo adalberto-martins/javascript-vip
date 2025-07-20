@@ -5,6 +5,10 @@ body {
     background: whitesmoke;
 }
 
+header {
+    text-align: center;
+}
+
 main {
     width: 98%;
     padding: 5PX;
@@ -12,6 +16,8 @@ main {
 }
 
 input {
+    display: block;
+    margin: auto;
     width: 150px;
     height: 50px;
     font-weight: bold;
