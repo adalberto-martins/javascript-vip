@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+body {
+    font: bolder 20pt Arial;
+    background: whitesmoke;
+}
+
+main {
+    width: 98%;
+    padding: 5PX;
+    background: white;
+}
+
+input {
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 0.7em;    
+}
+
+input:hover {
+    background: blanchedalmond;
+}
+
+section#res {
+    margin-top: 20px;
+    color: #333;
+}
