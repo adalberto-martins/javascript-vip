@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background: whitesmoke;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {    
+    background: blue;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 1.8em;
+    letter-spacing: 1px;
+}
+
+main {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+input[type=button] {
+    display: inline-block;
+    margin: 20px auto;
+    width: 180px;
+    height: 50px;
+    background: rgb(0, 0, 255);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+
+}
+
+input[type=button]:hover {
+    background: rgb(0, 0, 210);
+    transform: scale(1.05);
+}
+
+#res {
+    margin-top: 20px;
+    color: #555;
+    font-size: 1em;
+    line-height: 1.6em;
+
+}
+.aprovado {
+    background: #a6eb9a;
+    color: green;
+}
+.recuperacao {
+    background: #ffffe3;
+    color: #c3884b;
+}
+.reprovado {
+    background: #e28783;
+    color: red;
+}
