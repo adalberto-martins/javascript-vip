@@ -4,30 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Somando Números</title>
-    <style>
-        body {
-            font: normal 18pt Arial;
-        }
-        input {
-            font: normal 18pt Arial;
-            width: 100px;
-        }
-        div#res {
-            margin-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Somando Valores</h1>
-    <label for="txtn1">N1</label>
-    <input type="number" name="txtn1" id="txtn1">
-    <label for="txtn2">N2</label>
-    <input type="number" name="txtn2" id="txtn2">
-    <input type="submit" value="Somar" onclick="somar()">
-    <div id="res">Resultado</div>
+    <main>
+        <section>
+            <h1>Somando Valores</h1>
+            <form action="">
+                <label for="txtn1">N1</label>
+                <input type="number" name="txtn1" id="txtn1">
+                <label for="txtn2">N2</label>
+                <input type="number" name="txtn2" id="txtn2">
+                <input type="button" value="Somar" onclick="somar()">
+            </form>          
+        </section>
+        <section id="res">
+            <h2>Resultado</h2>           
+        </section>
+    </main>
 </body>
 <script>
-    function somar() {
+    function somar() {        
 
         var tn1 = window.document.getElementById('txtn1')
         var tn2 = window.document.querySelector('input#txtn2')
@@ -35,8 +32,11 @@
         var n1 = Number(tn1.value)
         var n2 = Number(tn2.value)
         var s = n1 + n2
-        res.innerHTML = `A soma entre ${n1} e ${n2} e igual a ${s}`
-
+        res.innerHTML = `A soma entre ${n1} e ${n2} e igual a ${s}` + ` <button onclick="voltar()">Voltar</button>`
     }
+
+    function voltar() {
+        location.reload()        
+    }    
 </script>
 </html>
