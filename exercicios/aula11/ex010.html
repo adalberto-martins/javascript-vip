@@ -4,23 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DETRAN</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Sistema de Multas</h1>
-    <label for="txtvel">Velocidade do carro:</label>
-    <input type="number" name="txtvel" id="txtvel">km/h
-    <input type="submit" value="Verificar" onclick="calcular()">
-    <div id="res"></div>
+    <main>
+        <section>
+            <form action="">
+                <h1>Sistema de Multas</h1>
+                <label for="txtvel">Velocidade do carro:</label>
+                <input type="number" name="txtvel" id="txtvel">km/h
+                <input type="button" value="Verificar" onclick="calcular()">
+            </form>
+        </section>
+        <section id="res">
+            <h2>Resultado</h2>
+        </section>
+    </main>
     <script>
         function calcular() {
             var txtv = window.document.querySelector('input#txtvel')
-            var res = window.document.querySelector('div#res')
+            var res = window.document.querySelector('section#res')
             var vel = Number(txtv.value)
             res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}</strong> km/h.</p>`
             if (vel > 60){
                 res.innerHTML += `<P>Você está <strong>MULTADO</strong> por excesso de <strong>VELOCIDADE!</strong></P>`
             }
-            res.innerHTML += `<p>Dirija sempre com cinto de segurança!</P>`
+            res.innerHTML += `<p>Dirija sempre com cinto de segurança!</P>` + `<button onclick="voltar()">Voltar</button>`
+        }
+
+        function voltar() {
+            location.reload()
         }
     </script>
 </body>
