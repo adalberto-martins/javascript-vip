@@ -8,19 +8,19 @@ function carregar() {
    
     if (hora >= 0 && hora < 12) {
         // BOM DIA!
-        saudacao = 'BOM DIA!'
+        saudacao = '<strong>BOM DIA!</strong>'
         img.src = 'fotomanha.png'  
         document.body.style.background = '#c7b087' 
         
     } else if (hora >= 12 && hora < 18) {
         //BOA TARDE!
-        saudacao = 'BOA TARDE!'
+        saudacao = '<strong>BOA TARDE!</strong>'
         img.src = 'fototarde.png' 
         document.body.style.background = '#cb9056'
         
     } else {
         //BOA NOITE!
-        saudacao = 'BOA NOITE!'
+        saudacao = '<strong>BOA NOITE!</strong>'
         img.src = 'fotonoite.png'
         document.body.style.background = '#2b6b97'
     }
